@@ -1,17 +1,29 @@
+:root {
+  --table-color: #363636;
+  --table-background: #fff;
+  --table-width: 100%;
+  --table-margin: 20px;
+  --table-border: 1px solid #dbdbdb;
+  --table-border-width: 0 0 1px;
+  --table-padding: .5em .75em;
+  --table-thead-border-width: 0 0 2px;
+  --table-tfoot-bordet-width: 2px 0 0;
+}
+
 table {
   border-collapse: collapse;
-  width: 100%;
+  width: var(--table-width);
   border-spacing: 0;
-  margin-bottom: 20px
+  margin-bottom: var(--table-margin);
 }
 
 *+table {
-  margin-top: 20px
+  margin-top: var(--table-margin)
 }
 
 .table {
-  background-color: #fff;
-  color: #363636
+  background-color: var(--table-background);
+  color: var(--table-color);
 }
 
 table caption {
@@ -21,18 +33,18 @@ table caption {
 table td,
 table th {
   text-align: left;
-  border: 1px solid #dbdbdb;
-  border-width: 0 0 1px;
-  padding: .5em .75em;
+  border: var(--table-border);
+  border-width: var(--table-border-width);
+  padding: var(--table-padding);
   vertical-align: top
 }
 
 table thead td,
 table thead th {
-  border-width: 0 0 2px;
+  border-width: var(--table-thead-border-width);
 }
 
 table tfoot td,
 table tfoot th {
-  border-width: 2px 0 0;
+  border-width: var(--table-tfoot-bordet-width);
 }

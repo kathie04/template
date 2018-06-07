@@ -15,6 +15,8 @@
 
   --button-color-active: #222;
   --button-background-active: #fff;
+
+  --button-disabled-opasity: .45;
 }
 
 .button {
@@ -34,7 +36,7 @@
   padding: var(--button-padding);
   font-family: var(--button-font-family);
   font-size: var(--button-font-size);
-  min-height: var(--button-heigth);
+  min-height: var(--button-height);
   text-decoration: none;
   background: var(--button-background);
   color: var(--button-color);
@@ -69,5 +71,5 @@
 
 .button:disabled {
   pointer-events: none;
-  opacity: .45;
+  opacity: var(--button-disabled-opasity);
 }
