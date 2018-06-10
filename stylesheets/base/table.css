@@ -1,4 +1,20 @@
 :root {
+<<<<<<< HEAD
+  --table-color:                                   var(--global-color);
+  --table-background:                              var(--global-background);
+
+  --table-margin-vertical:                         var(--global-margin);
+
+  --table-cell-padding:                            16px;
+
+  --table-divider-border-width:                    var(--global-border-width);
+  --table-divider-border:                          var(--global-border-width) solid var(--global-border);
+
+  --table-expand-min-width:                        150px;
+}
+
+
+=======
   --table-color: #363636;
   --table-background: #fff;
   --table-width: 100%;
@@ -10,10 +26,20 @@
   --table-tfoot-bordet-width: 2px 0 0;
 }
 
+>>>>>>> 2bfa8b3c81a0d4b7903e460db1743d9901fd4e94
 table {
   border-collapse: collapse;
   width: var(--table-width);
   border-spacing: 0;
+<<<<<<< HEAD
+  margin-bottom: var(--table-margin-vertical);
+  background: var(--table-background);
+  color: var(--table-color);
+}
+
+* + table {
+  margin-top: var(--table-margin-vertical)
+=======
   margin-bottom: var(--table-margin);
 }
 
@@ -24,6 +50,7 @@ table {
 .table {
   background-color: var(--table-background);
   color: var(--table-color);
+>>>>>>> 2bfa8b3c81a0d4b7903e460db1743d9901fd4e94
 }
 
 table caption {
@@ -33,6 +60,21 @@ table caption {
 table td,
 table th {
   text-align: left;
+<<<<<<< HEAD
+  border: var(--table-divider-border);
+  border-width: 0 0 var(--table-divider-border-width);
+  padding: var(--table-cell-padding);
+  vertical-align: top;
+}
+
+.table-shrink {
+  width: 1px;
+}
+
+.table-expand {
+  min-width: var(--table-expand-min-width);
+}
+=======
   border: var(--table-border);
   border-width: var(--table-border-width);
   padding: var(--table-padding);
@@ -48,3 +90,4 @@ table tfoot td,
 table tfoot th {
   border-width: var(--table-tfoot-bordet-width);
 }
+>>>>>>> 2bfa8b3c81a0d4b7903e460db1743d9901fd4e94
